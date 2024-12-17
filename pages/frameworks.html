@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ethical Frameworks</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .framework-container {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .framework-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .framework-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--accent-bg);
+        }
+
+        .principle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .principle-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .principle-card h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .example-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .framework-diagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: var(--accent-bg);
+            border-radius: 8px;
+        }
+
+        .diagram-step {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .diagram-arrow {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h2><a href="../index.html">Ethics of AI in Healthcare Research and Technology</a></h2>
+            </div>
+            <div class="nav-links">
+                <a href="landscape.html">Landscape</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="frameworks.html">Frameworks</a>
+                <!-- <a href="action.html">Action</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="section-header">
+            <h1>Ethical Frameworks in AI Healthcare</h1>
+            <p>Understanding the key ethical frameworks that guide responsible AI development in medical devices</p>
+        </div>
+
+        <section class="framework-container">
+            <div class="framework-header">
+                <div class="framework-icon">P</div>
+                <h2>Principlist Approach</h2>
+            </div>
+            <p>The principlist approach provides four fundamental principles for ethical decision-making in healthcare
+                AI:</p>
+
+            <div class="principle-grid">
+                <div class="principle-card">
+                    <h4>Autonomy</h4>
+                    <p>Respecting the patient's right to make informed decisions about their healthcare</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Ensuring AI systems provide clear explanations of their
+                        recommendations to allow informed patient consent
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Beneficence</h4>
+                    <p>Acting in the best interest of patients and promoting their wellbeing</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Designing AI systems that maximize diagnostic accuracy and treatment
+                        effectiveness
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Non-maleficence</h4>
+                    <p>Avoiding harm and minimizing risks to patients</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Rigorous testing of AI systems to prevent false diagnoses or harmful
+                        recommendations
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Justice</h4>
+                    <p>Ensuring fair distribution of benefits and risks across all populations</p>
+                    <div class="example-box">
+                        <strong>Example:</strong> Using diverse training data to ensure AI systems work equally well for
+                        all demographic groups
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="framework-container">
+            <div class="framework-header">
+                <div class="framework-icon">V</div>
+                <h2>Value Sensitive Design (VSD)</h2>
+            </div>
+            <p>VSD is a systematic approach to designing technology that accounts for human values throughout the entire
+                design process.</p>
+
+            <div class="framework-diagram">
+                <div class="diagram-step">
+                    <h4>Conceptual Investigation</h4>
+                    <p>Identifying stakeholders and their values</p>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-step">
+                    <h4>Empirical Investigation</h4>
+                    <p>Understanding how values affect stakeholder interaction</p>
+                </div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-step">
+                    <h4>Technical Investigation</h4>
+                    <p>Implementing values in technical design</p>
+                </div>
+            </div>
+
+            <div class="principle-grid">
+                <div class="principle-card">
+                    <h4>Key Values in Healthcare AI</h4>
+                    <ul>
+                        <li>Patient Privacy</li>
+                        <li>Transparency</li>
+                        <li>Trust</li>
+                        <li>Accessibility</li>
+                    </ul>
+                </div>
+                <div class="principle-card">
+                    <h4>Implementation Strategies</h4>
+                    <ul>
+                        <li>Stakeholder workshops</li>
+                        <li>Value scenarios</li>
+                        <li>Prototyping</li>
+                        <li>Impact assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="framework-container">
+            <div class="framework-header">
+                <div class="framework-icon">I</div>
+                <h2>IEEE Ethics Guidelines</h2>
+            </div>
+            <p>IEEE's ethical guidelines provide specific principles for AI systems in healthcare settings.</p>
+
+            <div class="principle-grid">
+                <div class="principle-card">
+                    <h4>Transparency</h4>
+                    <p>AI systems should be designed to be transparent and explainable</p>
+                    <div class="example-box">
+                        <strong>Application:</strong> Implementing interpretable AI models in diagnostic systems
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Accountability</h4>
+                    <p>Clear lines of responsibility for AI system decisions</p>
+                    <div class="example-box">
+                        <strong>Application:</strong> Establishing clear protocols for AI system oversight
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Privacy</h4>
+                    <p>Protecting patient data and maintaining confidentiality</p>
+                    <div class="example-box">
+                        <strong>Application:</strong> Implementing robust data protection measures
+                    </div>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Fairness</h4>
+                    <p>Ensuring equitable treatment across all patient groups</p>
+                    <div class="example-box">
+                        <strong>Application:</strong> Regular bias testing and correction in AI systems
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="content-section" id="references">
+        <h2>References</h2>
+        <div style="padding: 2rem; background: var(--light-bg); border-radius: 8px;">
+            <ol style="list-style-type: [1]; padding-left: 2rem;">
+                <li>U.S. Food and Drug Administration, "Artificial Intelligence and Machine Learning in Software as a
+                    Medical Device," FDA.gov, 2021. [Online]. Available:
+                    https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device
+                </li>
+                <br>
+            </ol>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ethics of AI in Healthcare Research and Technology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .split-content {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .text-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .image-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .split-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h2><a href="index.html" style="text-decoration: none; color: var(--text-color);">Ethics of AI in
+                        Healthcare Research and Technology</a></h2>
+            </div>
+            <div class="nav-links">
+                <a href="pages/landscape.html">Landscape</a>
+                <a href="pages/challenges.html">Challenges</a>
+                <!-- <a href="pages/frameworks.html">Frameworks</a> -->
+                <!-- <a href="pages/action.html">Action</a> -->
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="split-content">
+        <div class="text-content">
+            <h2>The Ethics of AI in Healthcare</h2>
+            <p> As someone interested in the intersection of machine learning/artificial intelligence and biology, I am
+                excited by its transformative potential in advancing our understanding of various biological phenomena,
+                as well as for revolutionizing diagnostics and personalized medicine. However, with these advances come
+                significant ethical responsibilities that scientists and engineers must always consider.</p>
+
+            <p> Through this website, I hope to engage the community in my interest in the ethics of AI in healthcare
+                research and technology. Here, I present a historical overview of research in the field, some case
+                studies and ethical dilemmas they presented, as well as the engineering implications we can learn from
+                these case studies.
+                This resource is designed to help fellow
+                engineers and researchers navigate these complex issues while advancing innovation in healthcare
+                technology</p>
+        </div>
+
+        <div class="image-column">
+            <div class="image-card">
+                <img
+                    src="https://media.nature.com/lw1200/magazine-assets/d41586-020-03348-4/d41586-020-03348-4_18633156.jpg">
+                <div class="image-caption">Google's DeepMind for protein 3D structure prediction</div>
+            </div>
+            <div class="image-card">
+                <img src="https://www.healthcareitnews.com/sites/hitn/files/051822%20Combinostics%201200.png">
+                <div class="image-caption">AI-powered MRI analysis for dementia</div>
+            </div>
+            <div class="image-card">
+                <img
+                    src="https://s3-prod.modernhealthcare.com/s3fs-public/styles/1200x630/public/2016%20autonomous%20surgery%20on%20pig%20-%20%20Surgical_WEB.jpg?h=59011727">
+                <div class="image-caption">Surgical Robotics assisted by Artifical Intelligence</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

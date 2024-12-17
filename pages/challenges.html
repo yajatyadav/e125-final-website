@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ethical Challenges and Case Studies</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .case-study {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-study-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .case-image {
+            width: 300px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .principle-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .implications {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .implication-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .implication-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            background: var(--accent-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .timeline-point {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            padding: 0 1rem;
+        }
+
+        .timeline-point:not(:last-child)::after {
+            content: "→";
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h2><a href="../index.html">Ethics of AI in Healthcare Research and Technology</a></h2>
+            </div>
+            <div class="nav-links">
+                <a href="landscape.html">Landscape</a>
+                <a href="challenges.html">Challenges</a>
+                <!-- <a href="frameworks.html">Frameworks</a> -->
+                <!-- <a href="action.html">Action</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="section-header">
+            <h1> Ethical Challenges and Case Studies in AI Healthcare</h1>
+            <p>Here, we examine real-world cases and their ethical implications for biomedical engineering.</p>
+        </div>
+        <section class="case-study">
+            <div class="case-study-header">
+                <img src="data:image/jpeg;base64,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"
+                    alt="IBM Watson Interface" class="case-image">
+                <div>
+                    <h2>Case Study 1: IBM Watson for Oncology</h2>
+                    <p>In 2011, IBM's Watson won Jeapordy! Hoping to extend this model, IBM decided to focus on tackling
+                        healthcare challenges. They released Watson for Oncology, which aimed to analyze vast amounts of
+                        medical literature and data about cancer diagnoses and treatments, in order to recommend
+                        treatment plans to oncologists. However, the ambitious vision of an evidence-based assistant to
+                        oncologists soon led to several problems. </p>
+                    <h3>The Problem</h3>
+                    <p>Watson was trained heavily using data from hospitals like Memorial Sloan Kettering Cancer Center
+                        (MSKCC). However, initial trials in India and China showed that the model's recommendations were
+                        inconsistent with local physicians, as the model displayed a US-centric focus on treatment plans
+                        and drug choices. Criticism continued to increase, and investigative reports found that some of
+                        Watson’s recommendations were based on hypothetical scenarios rather than real-world data.
+                        Eventually, IBM shut down the program, and later postmortem analyses found that systemic issues
+                        like poor data quality, inadequate clinical validation, and unrealistic timelines had plagued
+                        the model. </p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3> Ethical Principles</h3>
+
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <h4>Transparency</h4>
+                        <ul>
+                            <li>The "Black box" decision-making process made it harder to interpret how the model was
+                                making its conclusions.</li>
+                            <li>There were limited accountability measures to allow the model to be more flexible.</li>
+                        </ul>
+                    </div>
+
+                    <div class="principle-card">
+                        <h4>Healthcare Equity</h4>
+                        <ul>
+                            <li>The model's training was biased to prefer a single institution's diagonstic and
+                                treatment style.</li>
+                            <li>Resource availability issues: no consideration for variations in things like access to
+                                drugs or technology across different parts of the globe made the model not adaptable
+                                enough.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implications">
+                <h3>Engineering Implications</h3>
+                <div class="implication-list">
+                    <div class="implication-item">
+                        <h4>Data Diversity</h4>
+                        <p>Engineers working on such ML/AI-systems should ensure they use diverse, real-world patient
+                            data with proper validation. Synthetic data should be used with utmost caution.</p>
+                    </div>
+                    <div class="implication-item">
+                        <h4>System Design</h4>
+                        <p>Engineers should design complex systems such as Watson to be more explainable- things like
+                            reasoning chains and confidence metrics that justify why a model made a certain choice
+                            should be easily accesible at all levels.</p>
+                        <p>Engineers also need to gather enough feedback from everyone involved, form physicians to
+                            patients to pharmatcists, to ensure all these perspectives are accounted for in development.
+                        </p>
+                    </div>
+                    <div class="implication-item">
+                        <h4>Marketing and Rollouts</h4>
+                        <p>With technologies like this, the development should be iterative in nature- instead of just
+                            releasing a model, smarter deployment techniques like phased rollouts should be utilized.
+                        </p>
+                        <p> Additionally, companies must be cautious in their marketing claims- IBM's aggressive
+                            marketing severely exaggerated Watson's capabilities, and didn't focus on its limitations,
+                            creating unrealistic expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study">
+            <div class="case-study-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-4H7m0m91a7Z-r-E5B674VCKcD_19AESnyjDWSfbiQx_HmN5-apQcJEK0MgzdarUZ9s&usqp=CAU"
+                    alt="Babylon Health Chatbot Interface" class="case-image">
+                <div>
+                    <h2>Case Study 2 : Babylon Health's AI Symptom Checker</h2>
+                    <p>Babylon Health was a UK tech start-up that rose to being worth over billions of dollars and then
+                        quickly collapsed. Babylon's "revolutionary" product was a symptom-checking chatbot. The bot
+                        would assess symptoms and perform triage, claiming that this would help doctors make diagnoses
+                        and cut waiting lists. This promise of being the "Google of healthcare" gained popularity from
+                        several investors and politicians, leading the company to raise close to a billion dollars in
+                        less than 10 years. </p>
+
+                    <h3>The Problem</h3>
+                    <p>The chatbot failed to live up to the grand expectations. Physicians pointed out how it failed to
+                        catch symptoms of a heart attack, would make severely off diagnoses, with an investigation
+                        concluding the bot performs "significantly worse" than a doctor. A former employee later
+                        disclosed the "algorithm" was nothing more than a tree of if-else statements, and didn't exactly
+                        employ ML/AI techniques. Ultimately, the company lost 99% of its value within 18 months, and was
+                        later sold off.</p>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="content-section">
+                <h3> Ethical Principles</h3>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <h4>Safety vs. Innovation</h4>
+                        <ul>
+                            <li>Fast Development process: the company embraced the "move fast, break stuff" mindset
+                                typical of tech startups. However, given the sensitive nature of this product, it was
+                                much more important to add several safety guardrails and appropriate methods of
+                                validating the chatbot responses instead of trying to move fast.</li>
+                            <li>Lack of diverse perspectives: the company didn't really work with doctors and other
+                                medical professionals actively throughout development, leading to several
+                                inconsistencies being observed upon release.</li>
+                        </ul>
+                    </div>
+
+                    <div class="principle-card">
+                        <h4>Integrity</h4>
+                        <ul>
+                            <li>The company was dishonest in their advertising, claiming the decisions were powered with
+                                "artificial intelligence", while in reality it was an Excel decision tree.</li>
+                            <li>The Dishonest claims were also dangerous as they were propagated by influential people
+                                like
+                                investors and politicians, causing more and more patients to mistakenly put their trust
+                                in the product.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implications">
+                <h3>Engineering Implications</h3>
+                <div class="implication-list">
+                    <div class="implication-item">
+                        <h4>Honest Communication</h4>
+                        <p>When building these complex systems, engineers should never simplify their explanations at
+                            the sake of misrepresenting what it does. Over-simplifying the explanations can lead to
+                            misleaden perceptions, and patients might not realize the limitations of these technologies.
+                            Engineers should also be honest when communicating with stakeholders like investors and
+                            politicians, as false advertising may be propagated through them to the general public and
+                            have much wider-reaching consequences.
+                        </p>
+                    </div>
+                    <div class="implication-item">
+                        <h4>Testing Requirements</h4>
+                        <p>Companies working in this space should have strict government-regulated testing, such as
+                            third-parties testing the models, as well as internal teams dedicated to "breaking" these
+                            models. The company should be logging all the safety metrics and presenting them publicly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <section class="content-section" id="references">
+        <h2>References</h2>
+        <div style="padding: 2rem; background: var(--light-bg); border-radius: 8px;">
+            <ol style="list-style-type: [1]; padding-left: 2rem;">
+                <li>“Case Study 20: The $4 Billion AI Failure of IBM Watson for Oncology,” Henricodolfing.com, 2024.
+                    https://www.henricodolfing.com/2024/12/case-study-ibm-watson-for-oncology-failure.html.
+                </li>
+                <li>
+                    T. W. U. last updated, “Babylon Health: the failed AI wonder app that ‘dazzled’ politicians,”
+                    theweek, Oct. 30, 2023.
+                    https://theweek.com/health/babylon-health-the-failed-ai-wonder-app-that-dazzled-politicians.
+                    ‌
+                </li>
+                <br>
+            </ol>
+        </div>
+    </section>
+
+</body>
+
+</html>
